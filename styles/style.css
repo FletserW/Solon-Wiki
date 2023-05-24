@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+:root {
+    /*===================== COLOR ======================*/
+
+    /*=====Reader=====*/
+    --reader:               #333;
+    --readercolorlink:      #FF6428;
+    --readershadow:         #888;
+    --readershadowdark:     #292929;
+    /*=====Menu=====*/
+    --dropdown:             #E8721A;
+    --dropdownbutton:       #E8731A;
+    --dropdownbuttonshadow: #5C2E0A;
+    /*=====Body=====*/
+    --body:                 #F5F5F5;
+    --bodydark:             #616161;
+    --bodycolordark:        #e0e0e0;
+    /*=====Main=====*/
+    --main:                 #fff;
+    --maincolor:            #333;
+    --mainshadow:           #b3b3b3;
+    --maincolorlink:        #00B395;
+    --maincolorlinkhover:   #25f1cf;
+    --maindark:             #424242;
+    --mainshadowdark:       #414141;
+    /*=====Tags=====*/
+    --tags:                 #e0e0e0;
+    --tagsshadow:           #b3b3b3;
+    --tagsdark:             #353535;
+    --tagsshadowdark:       #292929;
+    /*=====Reader=====*/
+    --imagemshadow:         #757575;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+header {
+    background-color: var(--reader);
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    margin-bottom: 1.25em;
+    border-radius: 0.625em;
+    box-shadow: 0.4375em 0.4375em 0.9375em var(--readershadow);
+    margin: 7px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+     
+}
+
+nav ul li a {
+    color: var(--readercolorlink);
+    text-decoration: none;
+    margin-left: 0.9375em;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+body {
+    background-color: var(--body);
+}
