@@ -37,7 +37,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    
+    font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -46,11 +46,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 5px;
     margin-bottom: 1.25em;
     border-radius: 0.625em;
     box-shadow: 0.4375em 0.4375em 0.9375em var(--readershadow);
     margin: 7px;
+    padding-top: 5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
@@ -72,3 +77,85 @@ nav ul li a {
 body {
     background-color: var(--body);
 }
+
+main {
+    background-color: var(--main);
+    padding: 1.875em;
+    margin: auto;
+    max-width: 48em;
+    min-width: 17.5em;
+    border-radius: 0.625em;
+    box-shadow: 0 0 1.5625em var(--mainshadow);
+    font-size: 1.125em;
+    color: var(--maincolor);
+    text-align: justify;
+}
+
+.logo{
+    max-width: 100%;
+    min-width: 7.8125em;
+    margin-right: 30px;
+    margin-left: 0.9375em;
+}
+
+/* Estilos para o menu responsivo */
+.menu-icon {
+    display: none; /* Esconde o ícone do menu por padrão */
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon img {
+    width: 30px;
+    height: auto;
+    align-items: end;
+    /* Outros estilos de imagem */
+}
+  
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.menu li {
+    margin-left: 1em;
+}
+  
+@media (max-width: 2000px) {
+/* Mostra o ícone do menu e oculta a lista de links */
+    .menu-icon {
+        display: block;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    /* Estilos para o menu quando está aberto */
+    #menu-toggle:checked ~ .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      background-color: var(--reader);
+      padding: 1em;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      border-radius: 0.625em;
+      box-shadow: 0.4375em 0.4375em 0.9375em var(--readershadow);
+    }
+  
+    .menu li {
+      margin-left: 0;
+      margin-bottom: 1em;
+    }
+  
+    .menu li:last-child {
+      margin-bottom: 0;
+    }
+}
+  
