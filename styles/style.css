@@ -40,11 +40,13 @@
     font-family: "Roboto", sans-serif;
 }
 
+/* ================= Header =================*/
+
 header {
     background-color: var(--reader);
     box-shadow: 5px 5px 10px var(--readershadow);
     border-radius: 10px;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 .nav-bar {
@@ -85,16 +87,21 @@ header {
     font-weight: 500;
 }
 
-.nav-link:hover {
-  transform: scale(1.05);
+#options{
+    display: flex;
+    margin-top: 0.8rem;
 }
 
 .login-button button {
     border: none;
-    margin-top: 0.8rem;
+    margin-left: 20px;
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #0187a7;
+}
+
+.login-button :hover {
+    transform: scale(1.05);
 }
 
 .login-button button a {
@@ -112,8 +119,10 @@ header {
     display: none;
 }
 
+/* =============== Corpo ================*/
 body {
     background-color: var(--body);
+    margin: 10px;
 }
 
 main {
@@ -126,6 +135,14 @@ main {
     box-shadow: 0 0 1.5625em var(--mainshadow);
     font-size: 1.125em;
     color: var(--maincolor);
+    text-align: justify;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+p {
     text-align: justify;
 }
 
@@ -145,6 +162,10 @@ main {
     .mobile-menu-icon {
         margin-top: 0.8rem;
         display: block;
+    }
+
+    .mobile-menu-icon:hover{
+        transform: scale(1.05);
     }
 
     .mobile-menu-icon button {
