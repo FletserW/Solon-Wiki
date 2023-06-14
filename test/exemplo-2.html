@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+    <script type="text/javascript">
+        function slide1(){
+            document.getElementById('foto').src="../artigos/filezille/instalar_01.jpg"
+            setTimeout("slide2()",1000)
+        }
+        function slide2(){
+            document.getElementById('foto').src="../artigos/filezille/instalar_02.jpg"
+            setTimeout("slide1()", 1000)
+        }
+    </script>
+</head>
+<body onload="slide1()">
+    <img id="foto" width="600" height="200">
+</body>
+</html>
