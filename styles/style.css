@@ -94,7 +94,6 @@ header {
 
 .login-button button {
     border: none;
-    margin-left: 20px;
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #0187a7;
@@ -121,6 +120,7 @@ header {
 
 .dark-mode{
     margin-top: 9px;
+    margin-right: 15px;
 }
 .dark-mode:hover {
     transform: scale(1.1);
