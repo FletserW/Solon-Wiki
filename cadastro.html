@@ -6,83 +6,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solon Wiki</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/form.css">
     <title>Solon Wiki</title>
 </head>
-<style>
-    #registrar {
-        font-weight: 500;
-        font-size: 1.02rem;
-        border: none;
-        margin-top: 20px;
-        padding: 10px 15px;
-        border-radius: 5px;
-        background-color: #0187a7;
-    }
-     #registrar:hover {
-        transform: scale(1.05);
-        box-shadow: 3px 3px 10px #616161;
-     }
-</style>
-
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Logo do site"></a>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Artigos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
-                </ul>
-            </div>
-
-            <section id="options">
-                <div class="dark-mode">
-                    <img id="mode_icon" src="images/dark-mode.png" alt="Modo dark">
-                </div>
-                <div class="login-button">
-                    <button><a href="#">Entrar</a></button>
-                </div>
-                <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><img class="icon" src="images/menu-toggle-icon.png" alt=""></button>
-                </div>
-            </section>
-        </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Artigos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
-            </ul>
-
-            <div class="login-button">
-                <button><a href="#">Entrar</a></button>
-            </div>
+    <div class="container">
+        <div class="form-image">
+            <img src="images/undraw_knowledge_re_5v9l.svg" alt="">
         </div>
-    </header>
-    <main>
-        <h1>Inscreva-se</h1>
-        <form action="cadastro.php" method="get">
-            <label for="name">Nome</label><br>
-            <input type="text" name="nome" id="name"><br>
-            <label for="email">E-mail</label><br>
-            <input type="email" name="email" id="email"><br>
-            <label for="password">Senha</label><br>
-            <input type="password" name="password" id="password"><br>
-            <label for="cpassword">Confirme senha</label><br>
-            <input type="password" name="cpassword" id="password"><br>
-            <input type="submit" value="Resgistrar" id="registrar">
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
 
-        </form>
-    </main>
-    <script src="scripts/standard.js"></script>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                    </div>
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
