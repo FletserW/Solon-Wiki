@@ -119,6 +119,13 @@ header {
     display: none;
 }
 
+.dark-mode{
+    margin-top: 9px;
+}
+.dark-mode:hover {
+    transform: scale(1.1);
+}
+
 /* =============== Corpo ================*/
 body {
     background-color: var(--body);
@@ -146,6 +153,28 @@ p {
     text-align: justify;
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.imagem {
+    border-style: none;
+    border-radius: 0.625em;
+    max-width: 100%;
+    margin-bottom: 2em;
+    box-shadow: 0.3125em 0.3125em 0.9375em #757575;
+}
+
+/* ======== Media screens ==========*/
+
 @media screen and (max-width: 730px) {
     .nav-bar {
         padding: 1.1rem;
@@ -160,7 +189,8 @@ p {
     }
 
     .mobile-menu-icon {
-        margin-top: 0.8rem;
+        margin-top: 0.2rem;
+        margin-left: 0.8em;
         display: block;
     }
 
