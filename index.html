@@ -13,30 +13,30 @@
 <style>
     #feature-content {
         display: grid;
-        height: 100vh;
-        grid-template: auto 1fr auto / auto 1fr auto
+        grid-gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        min-width: none;
     }
 
-    #feature-title {
-        background: lightpink;
-        padding: 2rem;
-        grid-column: 1 / 4;
+    .visual {
+        height: 100%;
+        width: 92%;
+        background: pink;
+        margin: 0.5rem 0;
     }
 
-    #feature-artige {
-        background: coral;
-        grid-column: 2 / 3;
+    .visual img {
+        max-width: 100%;
+        min-width: 100px;
     }
 
-    #feature-more {
-        background: yellow;
-        grid-column: 3 / 4;
-
-    }
-
-    #feature-more {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: #e6e6e6;
+        border-radius: 10px;
         padding: 1rem;
-        width: 200px;
     }
 </style>
 
@@ -94,18 +94,22 @@
                 evolução.</p>
         </section>
         <section id="feature-content">
-            <div id="feature-title">
-                <h1 contenteditable>Artigos mais visitados</h1>
+            <div class="card">
+                <h1>Filezilla</h1>
+
+                <div class="visual"><img src="artigos/filezille/filezille_logo.png" alt=""></div>
+                <p>Medium length description. Let's add a few more words here.</p>
             </div>
-            <div id="feature-artige" contenteditable>
-                <img src="../artigos/filezille/instalar_03.jpg" alt="" name="foto" width="200" height="200">
+            <div class="card">
+                <h1>FTP</h1>
+                <div class="visual"><img src="artigos/ftp/FTP_logo.png" alt=""></div>
+                <p>Long Description. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error
+                    repellat veritatis.</p>
             </div>
-            <div class="feature-more" contenteditable>
-                <img src="../artigos/filezille/instalar_01.jpg" alt="" width="300"
-                    onmouseover="document.foto.src='../artigos/filezille/instalar_01.jpg'"><br>
-                <img src="../artigos/filezille/instalar_02.jpg" alt="" width="300"
-                    onmouseover="document.foto.src='../artigos/filezille/instalar_02.jpg' ">
-                <br>
+            <div class="card">
+                <h1>Wordpress</h1>
+                <div class="visual"><img src="artigos/wordpress/wordpress_logo.png" alt=""></div>
+                <p>Short Description.</p>
             </div>
         </section>
 
