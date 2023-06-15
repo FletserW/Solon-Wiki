@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,58 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css" media="all">
 </head>
+<style>
+    .featured-content {
+        display: flex;
+    }
+
+    .main-item {
+        flex-basis: 60%;
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+    }
+
+    .main-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-details {
+        padding-left: 20px;
+    }
+
+    .other-items {
+        flex-basis: 40%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        flex-basis: 50%;
+        padding: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .item:hover {
+        flex-basis: 100%;
+    }
+
+    .item img {
+        width: 100%;
+        height: auto;
+    }
+
+    h3,
+    h4 {
+        margin: 10px 0;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+</style>
+
 <body>
     <header>
         <nav class="nav-bar">
@@ -23,13 +76,13 @@
                     <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
                 </ul>
             </div>
-            
+
             <section id="options">
                 <div class="dark-mode">
                     <img id="mode_icon" src="images/dark-mode.png" alt="Modo dark">
                 </div>
                 <div class="login-button">
-                    <button><a href="cadastro.html">Entrar</a></button>
+                    <button><a href="account/cadastro.html">Entrar</a></button>
                 </div>
                 <div class="mobile-menu-icon">
                     <button onclick="menuShow()"><img class="icon" src="images/menu-toggle-icon.png" alt=""></button>
@@ -43,26 +96,55 @@
                 <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
                 <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
             </ul>
-    
+
             <div class="login-button">
                 <button><a href="cadastro.html">Entrar</a></button>
             </div>
         </div>
 
-        
+
     </header>
     <main>
         <section id="introducao">
-            <h1 style="text-align: center";>Bem-vindo ao Solon Wiki</h1>
-            <p style="text-align: center; margin-bottom: 0.7rem;"><strong>Seu guia completo sobre tecnologia e inovação.</strong></p>
+            <h1 style="text-align: center" ;>Bem-vindo ao Solon Wiki</h1>
+            <p style="text-align: center; margin-bottom: 0.7rem;"><strong>Seu guia completo sobre tecnologia e
+                    inovação.</strong></p>
             <div class="image-container"><img src="images/banner.jpg" alt="Banner" class="imagem"></div>
-            <p>Explore nossos artigos e descubra informações valiosas sobre os mais diversos temas relacionados à tecnologia, desde tutoriais e guias até as últimas novidades e tendências.</p>
-            <p>Junte-se a nós e compartilhe conhecimento, aprenda e descubra o mundo da tecnologia em constante evolução.</p>
+            <p>Explore nossos artigos e descubra informações valiosas sobre os mais diversos temas relacionados à
+                tecnologia, desde tutoriais e guias até as últimas novidades e tendências.</p>
+            <p>Junte-se a nós e compartilhe conhecimento, aprenda e descubra o mundo da tecnologia em constante
+                evolução.</p>
         </section>
+        <section class="featured-content">
+            <div class="main-item">
+                <div class="main-image">
+                    <img src="artigos/filezille/filezille_logo.png" alt="Imagem Principal">
+                </div>
+                <div class="main-details">
+                    <h3>Filezille</h3>
+                    <p>O FileZilla é um cliente FTP gratuito e fácil de usar para transferir arquivos entre seu computador e um servidor remoto de forma segura e eficiente.</p>
+                </div>
+            </div>
+            <div class="other-items">
+                <div class="item">
+                    <img src="artigos/ftp/FTP_logo.png" alt="Imagem 1">
+                    <h4>Título do Item 1</h4>
+                    <p>Descrição do item 1...</p>
+                </div>
+                <div class="item">
+                    <img src="path/to/image2.jpg" alt="Imagem 2">
+                    <h4>Título do Item 2</h4>
+                    <p>Descrição do item 2...</p>
+                </div>
+                <!-- Adicione mais itens aqui -->
+            </div>
+        </section>
+
     </main>
     <footer>
 
     </footer>
     <script src="scripts/standard.js"></script>
 </body>
+
 </html>

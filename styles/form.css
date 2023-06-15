@@ -14,14 +14,14 @@ body {
     align-items: center;
     background: #0c0ce94d;
 }
-
+/* ===== Formulario todo =====*/
 .container {
     width: 80%;
     height: 80vh;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
-
+/* ===== Imagem a esquerda =====*/
 .form-image {
     width: 50%;
     display: flex;
@@ -29,6 +29,7 @@ body {
     align-items: center;
     background-color: #fde3a7d7;
     padding: 1rem;
+    border-radius: 10px 0 0 10px;
 }
 
 .form-image img {
@@ -43,7 +44,10 @@ body {
     align-items: center;
     background-color: #fff;
     padding: 3rem;
+    border-radius: 0 10px 10px 0;
 }
+
+/* ===== Cabeçalho =====*/
 
 .form-header {
     margin-bottom: 3rem;
@@ -51,12 +55,12 @@ body {
     justify-content: space-between;
 }
 
-.login-button {
+.login-button { /* Posição do botão entrar*/
     display: flex;
     align-items: center;
 }
 
-.login-button button {
+.login-button button { /* Forma do botão entrar */
     border: none;
     background-color: #6c63ff;
     padding: 0.4rem 1rem;
@@ -74,7 +78,7 @@ body {
     color: #fff;
 }
 
-.form-header h1::after {
+.form-header h1::after { /* Titulo */
     content: '';
     display: block;
     width: 5rem;
@@ -84,6 +88,8 @@ body {
     position: absolute;
     border-radius: 10px;
 }
+
+/* ===== Formulario =====*/
 
 .input-group {
     display: flex;
@@ -148,6 +154,14 @@ body {
     color: #000000c0;
 }
 
+#lost-password a{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #6c63ff;
+}
+
+/* ===== Confirmar cadastro =====*/
+
 .continue-button button {
     width: 100%;
     margin-top: 2.5rem;
@@ -169,7 +183,13 @@ body {
     color: #fff;
 }
 
-@media screen and (max-width: 1310px) {
+/* ===== Medias screens =====*/
+
+@media screen and (max-width: 1310px) { /* Media */
+    
+    .form{
+        border-radius: 10px;
+    }
     .form-image {
         display: none;
     }
@@ -181,10 +201,13 @@ body {
     }
 }
 
-@media screen and (max-width: 1064px) {
+@media screen and (max-width: 1064px) { /* Pequena */
     .container {
         width: 90%;
         height: auto;
+    }
+    .form{
+        border-radius: 10px;
     }
     .input-group {
         flex-direction: column;
