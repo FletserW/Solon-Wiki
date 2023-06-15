@@ -11,54 +11,32 @@
     <link rel="stylesheet" href="styles/style.css" media="all">
 </head>
 <style>
-    .featured-content {
-        display: flex;
+    #feature-content {
+        display: grid;
+        height: 100vh;
+        grid-template: auto 1fr auto / auto 1fr auto
     }
 
-    .main-item {
-        flex-basis: 60%;
-        display: flex;
-        align-items: center;
-        padding-right: 20px;
+    #feature-title {
+        background: lightpink;
+        padding: 2rem;
+        grid-column: 1 / 4;
     }
 
-    .main-image img {
-        width: 100%;
-        height: auto;
+    #feature-artige {
+        background: coral;
+        grid-column: 2 / 3;
     }
 
-    .main-details {
-        padding-left: 20px;
+    #feature-more {
+        background: yellow;
+        grid-column: 3 / 4;
+
     }
 
-    .other-items {
-        flex-basis: 40%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .item {
-        flex-basis: 50%;
-        padding: 10px;
-        transition: all 0.3s ease;
-    }
-
-    .item:hover {
-        flex-basis: 100%;
-    }
-
-    .item img {
-        width: 100%;
-        height: auto;
-    }
-
-    h3,
-    h4 {
-        margin: 10px 0;
-    }
-
-    p {
-        margin-bottom: 10px;
+    #feature-more {
+        padding: 1rem;
+        width: 200px;
     }
 </style>
 
@@ -115,28 +93,19 @@
             <p>Junte-se a nós e compartilhe conhecimento, aprenda e descubra o mundo da tecnologia em constante
                 evolução.</p>
         </section>
-        <section class="featured-content">
-            <div class="main-item">
-                <div class="main-image">
-                    <img src="artigos/filezille/filezille_logo.png" alt="Imagem Principal">
-                </div>
-                <div class="main-details">
-                    <h3>Filezille</h3>
-                    <p>O FileZilla é um cliente FTP gratuito e fácil de usar para transferir arquivos entre seu computador e um servidor remoto de forma segura e eficiente.</p>
-                </div>
+        <section id="feature-content">
+            <div id="feature-title">
+                <h1 contenteditable>Artigos mais visitados</h1>
             </div>
-            <div class="other-items">
-                <div class="item">
-                    <img src="artigos/ftp/FTP_logo.png" alt="Imagem 1">
-                    <h4>Título do Item 1</h4>
-                    <p>Descrição do item 1...</p>
-                </div>
-                <div class="item">
-                    <img src="path/to/image2.jpg" alt="Imagem 2">
-                    <h4>Título do Item 2</h4>
-                    <p>Descrição do item 2...</p>
-                </div>
-                <!-- Adicione mais itens aqui -->
+            <div id="feature-artige" contenteditable>
+                <img src="../artigos/filezille/instalar_03.jpg" alt="" name="foto" width="200" height="200">
+            </div>
+            <div class="feature-more" contenteditable>
+                <img src="../artigos/filezille/instalar_01.jpg" alt="" width="300"
+                    onmouseover="document.foto.src='../artigos/filezille/instalar_01.jpg'"><br>
+                <img src="../artigos/filezille/instalar_02.jpg" alt="" width="300"
+                    onmouseover="document.foto.src='../artigos/filezille/instalar_02.jpg' ">
+                <br>
             </div>
         </section>
 
