@@ -21,7 +21,7 @@
     .visual {
         height: 100%;
         width: 92%;
-        background: pink;
+        background: transparent;
         margin: 0.5rem 0;
     }
 
@@ -34,10 +34,24 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: #e6e6e6;
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* 026 Saint Petersburg */
+        margin-top: 20px;
         border-radius: 10px;
         padding: 1rem;
     }
+
+    .card:hover {
+        transform: scale(1.03);
+        transition: 0.5s;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.452);
+    }
+
+    @media screen and (max-width: 730px) {
+        div.card p {
+            display: none;
+        }
+    }
+
 </style>
 
 <body>
@@ -98,7 +112,7 @@
                 <h1>Filezilla</h1>
 
                 <div class="visual"><img src="artigos/filezille/filezille_logo.png" alt=""></div>
-                <p>Medium length description. Let's add a few more words here.</p>
+                <p>O FileZilla é um cliente FTP gratuito e fácil de usar para transferir arquivos entre seu computador e um servidor remoto de forma segura e eficiente.</p>
             </div>
             <div class="card">
                 <h1>FTP</h1>
