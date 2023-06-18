@@ -138,6 +138,7 @@ body {
 }
 
 main {
+    font-family: "Roboto", sans-serif;
     background-image: var(--main);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.342);
     padding: 1.875em;
@@ -150,12 +151,43 @@ main {
     text-align: justify;
 }
 
+main a {
+    color: var(--maincolorlink);
+    text-decoration: none;
+}
+
+main a:hover{
+    color: var(--maincolorlinkhover);
+    text-decoration: underline;
+}
+
 h1 {
     margin-bottom: 15px;
 }
 
+h2 {
+    padding: 20px 0;
+}
+
 p {
     text-align: justify;
+    padding: 10px 0;
+}
+
+abbr{
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.tags {
+    background: var(--tags);
+    padding: 22px;
+    border-radius: 0.625em;
+    box-shadow: 0.3125em 0.3125em 0.9375em var(--tagsshadow);
+  }
+
+aside { 
+    padding: 0 15px;
 }
 
 .image-container {
@@ -317,6 +349,10 @@ footer {
     .open {
         display: block;
     }
+
+    .tags{
+        font-size: 1em;
+      }
 
     /*===== Footer ======*/
 
