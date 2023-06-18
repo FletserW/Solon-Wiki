@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solon Wiki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/scripts/standard.js" media="all">
 </head>
-<style> 
+<style>
     #feature-content {
         display: grid;
         grid-gap: 1rem;
@@ -40,7 +41,7 @@
         margin-top: 20px;
         border-radius: 10px;
         padding: 1rem;
-        
+
     }
 
     .card:hover {
@@ -55,6 +56,12 @@
         color: rgb(54, 54, 54);
         display: contents;
 
+    }
+
+    h2 {
+        font-weight: 600px;
+        font-size: 30px;
+        margin-top: 30px;
     }
 
     @media screen and (max-width: 730px) {
@@ -124,12 +131,14 @@
             <p>Junte-se a nós e compartilhe conhecimento, aprenda e descubra o mundo da tecnologia em constante
                 evolução.</p>
         </section>
+        <h2>Paginas mais visitadas</h2>
         <section id="feature-content">
             <div class="card">
                 <a href="assets/artigos/filezille/filezille.html">
                     <h1>Filezilla</h1>
                     <div class="visual"><img src="assets/artigos/filezille/filezille_logo.png" alt=""></div>
-                    <p>O FileZilla é um cliente FTP gratuito e fácil de usar para transferir arquivos entre seu computador e
+                    <p>O FileZilla é um cliente FTP gratuito e fácil de usar para transferir arquivos entre seu
+                        computador e
                         um servidor remoto de forma segura e eficiente.</p>
                 </a>
             </div>
@@ -137,21 +146,70 @@
                 <a href="assets/artigos/ftp/FTP.html">
                     <h1>FTP</h1>
                     <div class="visual"><img src="assets/artigos/ftp/FTP_logo.png" alt=""></div>
-                    <p> Protocolo seguro para transferência de arquivos entre dispositivos via internet, essencial para gerenciar sites, realizar uploads e downloads de forma eficiente.</p>
+                    <p> Protocolo seguro para transferência de arquivos entre dispositivos via internet, essencial para
+                        gerenciar sites, realizar uploads e downloads de forma eficiente.</p>
                 </a>
             </div>
             <div class="card">
                 <a href="assets/artigos/wordpress/wordpress.html">
                     <h1>Wordpress</h1>
                     <div class="visual"><img src="assets/artigos/wordpress/wordpress_logo.png" alt=""></div>
-                    <p>Plataforma de criação de sites e blogs de código aberto, com recursos flexíveis e uma grande variedade de temas e plugins para personalização.</p>
+                    <p>Plataforma de criação de sites e blogs de código aberto, com recursos flexíveis e uma grande
+                        variedade de temas e plugins para personalização.</p>
                 </a>
             </div>
         </section>
 
     </main>
     <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h3>Social</h3>
 
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Navegação</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Artigos</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserved
+        </div>
     </footer>
     <script src="assets/scripts/standard.js"></script>
 </body>
