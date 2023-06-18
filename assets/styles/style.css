@@ -121,8 +121,9 @@ header {
     margin-top: 9px;
     margin-right: 10px;
 }
-.dark-mode:hover {
+.dark-mode img:hover {
     transform: scale(1.1);
+    cursor: ;
 }
 
 /* =============== Corpo ================*/

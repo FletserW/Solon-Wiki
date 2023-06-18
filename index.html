@@ -39,12 +39,21 @@
         margin-top: 20px;
         border-radius: 10px;
         padding: 1rem;
+        
     }
 
     .card:hover {
         transform: scale(1.03);
         transition: 0.5s;
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.452);
+        cursor: pointer;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: rgb(54, 54, 54);
+        display: contents;
+
     }
 
     @media screen and (max-width: 730px) {
@@ -116,22 +125,26 @@
         </section>
         <section id="feature-content">
             <div class="card">
-                <h1>Filezilla</h1>
-
-                <div class="visual"><img src="artigos/filezille/filezille_logo.png" alt=""></div>
-                <p>O FileZilla é um cliente FTP gratuito e fácil de usar para transferir arquivos entre seu computador e
-                    um servidor remoto de forma segura e eficiente.</p>
+                <a href="artigos/filezille/filezille.html">
+                    <h1>Filezilla</h1>
+                    <div class="visual"><img src="artigos/filezille/filezille_logo.png" alt=""></div>
+                    <p>O FileZilla é um cliente FTP gratuito e fácil de usar para transferir arquivos entre seu computador e
+                        um servidor remoto de forma segura e eficiente.</p>
+                </a>
             </div>
             <div class="card">
-                <h1>FTP</h1>
-                <div class="visual"><img src="artigos/ftp/FTP_logo.png" alt=""></div>
-                <p>Long Description. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error
-                    repellat veritatis.</p>
+                <a href="artigos/ftp/FTP.html">
+                    <h1>FTP</h1>
+                    <div class="visual"><img src="artigos/ftp/FTP_logo.png" alt=""></div>
+                    <p> Protocolo seguro para transferência de arquivos entre dispositivos via internet, essencial para gerenciar sites, realizar uploads e downloads de forma eficiente.</p>
+                </a>
             </div>
             <div class="card">
-                <h1>Wordpress</h1>
-                <div class="visual"><img src="artigos/wordpress/wordpress_logo.png" alt=""></div>
-                <p>Short Description.</p>
+                <a href="artigos/wordpress/wordpress.html">
+                    <h1>Wordpress</h1>
+                    <div class="visual"><img src="artigos/wordpress/wordpress_logo.png" alt=""></div>
+                    <p>Plataforma de criação de sites e blogs de código aberto, com recursos flexíveis e uma grande variedade de temas e plugins para personalização.</p>
+                </a>
             </div>
         </section>
 
